@@ -1,0 +1,28 @@
+@mixin buttonsettings {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-basic,
+.button-warning,
+.button-submit,
+.button-report {
+    @include buttonsettings;
+}
+
+.button-report {
+    background-color: red;
+  }
+  
+  .button-submit {
+    background-color: green;
+    color: white;
+  }
+  
+  .button-warning {
+    background-color: orange;
+    color: red;
+  }
